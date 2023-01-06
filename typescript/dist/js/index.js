@@ -32,6 +32,7 @@ id = 200;
 const userId = 10;
 const productId = "00001";
 const shirId = 123;
+//enum
 var Size;
 (function (Size) {
     Size["P"] = "Pequeno";
@@ -43,3 +44,31 @@ const camisa = {
     size: Size.P,
 };
 console.log(camisa);
+//litral types
+let teste;
+teste = "autenticado";
+teste = null;
+//funcoes
+function sun(a, b) {
+    return a + b;
+}
+console.log(12 + 12);
+function sayHelooTo(name) {
+    return `Hello ${name}`;
+}
+console.log(sayHelooTo("André"));
+function logger(msg) {
+    console.log(msg);
+}
+logger("Teste!");
+function greeting(name, greet) {
+    if (greet) {
+        console.log(`Olá ${greet} ${name}`);
+        return;
+    }
+    else {
+        console.log(`Olá ${name}`);
+    }
+}
+greeting("jose");
+greeting("Pedro", "Sir");

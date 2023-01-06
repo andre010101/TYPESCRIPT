@@ -61,3 +61,40 @@ const camisa = {
 };
 
 console.log(camisa);
+
+//litral types
+let teste: "autenticado" | null
+
+teste = "autenticado";
+teste = null;
+//funcoes
+function sun (a: number, b: number)
+{
+    return a + b
+}
+console.log(12 + 12)
+
+function sayHelooTo(name: string): string{
+    return `Hello ${name}`;
+}
+console.log(sayHelooTo("André"));
+
+function logger(msg: string): void{
+    console.log(msg);
+}
+logger("Teste!");
+
+function greeting(name: string, greet?: string)
+{
+    if(greet)
+    {
+        console.log(`Olá ${greet} ${name}`);
+        return;
+    }else{
+        console.log(`Olá ${name}`)
+    }
+   
+}
+
+greeting("jose");
+greeting("Pedro", "Sir");
