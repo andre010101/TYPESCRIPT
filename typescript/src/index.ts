@@ -48,3 +48,16 @@ type myIdType = number | string
 const userId: myIdType = 10
 const productId: myIdType = "00001"
 const shirId: myIdType = 123
+//enum
+enum Size {
+    P = "Pequeno",
+    M = "Médio",
+    G = "Grande"
+}
+
+const camisa = {
+    name: "Camisa gola V",
+    size: Size.P,
+};
+
+console.log(camisa);
