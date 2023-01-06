@@ -17,3 +17,12 @@ console.log(firstName);
 const myNumbers = [1, 2, 3];
 console.log(myNumbers);
 console.log(myNumbers.length);
+//tuplas
+let myTuple;
+myTuple = [5, "teste", ["a", "b"]];
+// o bject literals -> {prop:value}
+const user = {
+    name: "Pedro",
+    age: 18,
+};
+console.log(user);
